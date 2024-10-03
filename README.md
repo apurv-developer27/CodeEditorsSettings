@@ -1,7 +1,7 @@
-## VScode all settings
+## CodeEditor Settings
 
 ### Created by Apurv(apurv-developer27)
 
 ### Inside repository pages::
 
-- <a href="https://github.com/apurv-developer27/VSCodeSettings/blob/main/pages/VSCodeEmmetCodes.md" target="_blank">VSCodeEmmetCodes.md</a>
+- VS codes : <a href="https://github.com/apurv-developer27/VSCodeSettings/blob/main/pages/VSCodeEmmetCodes.md" target="_blank">VSCodeEmmetCodes.md</a>

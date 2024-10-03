@@ -42,6 +42,27 @@ Here is a comprehensive list of **Emmet commands** and **abbreviations** availab
 </ul>
 ```
 
+- **Multiplication and Text**  
+   `ul>li*3{Item $}` →
+
+  ```html
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  ```
+
+- **Numbered Items with Zero Padding**  
+   `ul>li.item-$$*3` →
+  ```html
+  <ul>
+    <li class="item-01"></li>
+    <li class="item-02"></li>
+    <li class="item-03"></li>
+  </ul>
+  ```
+
 ### **Classes and IDs**
 
 - **`div.class`** → `<div class="class"></div>`
@@ -136,9 +157,11 @@ Here is a comprehensive list of **Emmet commands** and **abbreviations** availab
 ### **CSS Syntax**
 
 1. **Selectors**
+
    - **`w100`** → `width: 100px;`
    - **`m10`** → `margin: 10px;`
    - **`p10-20`** → `padding: 10px 20px;`
+
 2. **Shortcuts for properties**
 
    - **`bgc`** → `background-color: ;`
@@ -150,9 +173,52 @@ Here is a comprehensive list of **Emmet commands** and **abbreviations** availab
    - **`m10*4`** → `margin: 10px 10px 10px 10px;`
 
 4. **CSS Abbreviations**
+
    - **`w100p`** → `width: 100%;`
    - **`h50p`** → `height: 50%;`
    - **`bd1s#000`** → `border: 1px solid #000;`
+
+5. **Property Expansion**  
+   `m10` → `margin: 10px;`  
+   `p10-20` → `padding: 10px 20px;`  
+   `w100` → `width: 100px;`  
+   `h100` → `height: 100px;`  
+   `bgc` → `background-color: ;`
+
+6. **Multiple Properties**  
+   `pos:a;top0;left0` →
+
+   ```css
+   position: absolute;
+   top: 0;
+   left: 0;
+   ```
+
+7. **Shorthand for Box Model**  
+   `m10-20` → `margin: 10px 20px;`  
+   `p5-10` → `padding: 5px 10px;`
+
+8. **Shorthand for Colors**  
+   `c#0f0` → `color: #0f0;`  
+   `bg#000.5` → `background-color: rgba(0,0,0,0.5);`
+
+9. **Flexbox**  
+   `d:f` → `display: flex;`  
+   `ai:c` → `align-items: center;`  
+   `jc:c` → `justify-content: center;`
+
+10. **Positioning**  
+    `pos:a` → `position: absolute;`  
+    `pos:r` → `position: relative;`
+
+11. **Text Styles**  
+    `fs16` → `font-size: 16px;`  
+    `fw700` → `font-weight: 700;`  
+    `tt:u` → `text-transform: uppercase;`  
+    `ta:c` → `text-align: center;`
+
+12. **Border Radius**  
+    `brd50%` → `border-radius: 50%;`
 
 ### **Commenting Elements**
 
@@ -240,6 +306,13 @@ You can also customize Emmet settings in VS Code by adding configurations in `se
       "razor": "html"
   }
   ```
+
+### Key Emmet Shortcuts in VS Code:
+
+- **Expand Abbreviation**: `Tab` or `Ctrl+E` (Mac: `Cmd+E`)
+- **Wrap with Abbreviation**: `Ctrl+Shift+P` (Mac: `Cmd+Shift+P`)
+- **Balance (Select HTML Tags)**: `Ctrl+Shift+A` (Mac: `Cmd+Shift+A`)
+- **Go to Matching Pair (HTML Tags)**: `Ctrl+Alt+T` (Mac: `Cmd+Option+T`)
 
 ---
 
